@@ -49,11 +49,6 @@ namespace KIDDYKIDS
                 MainFrame.GoBack();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void BtnTurnONMusic_Click(object sender, RoutedEventArgs e)
         {
             this.Player.SoundLocation = "TwirlyTops.wav";
