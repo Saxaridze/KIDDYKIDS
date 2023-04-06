@@ -1,0 +1,93 @@
+﻿<Page x:Class="KIDDYKIDS.GamesForKids.PageGamesForKids"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KIDDYKIDS.GamesForKids"
+      mc:Ignorable="d" 
+     d:DesignHeight="550" d:DesignWidth="1300"
+      Title="PageGamesForKids">
+
+    <Viewbox >
+        <Grid Background="#FFCAFFF8" Height="80" Width="220">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="8"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2"/>
+                <RowDefinition/>
+                <RowDefinition Height="2"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Canvas Grid.Row="0" Grid.Column="0">
+                    <Image x:Name="ImageWiderNarrower" Stretch="Fill" Source="/GamesForKids/GamesForKidsImage/WiderNarrowerImage.png" 
+                       Width="30" Height="20" Canvas.Left="7" Canvas.Top="1" MouseDown="ImageWiderNarrower_MouseDown"/>
+                    <StackPanel Canvas.Top="14" Width="43" Margin="0 7 0 0">
+                        <TextBlock Text="Шире-уже" FontWeight="Bold" FontSize="4" TextAlignment="Center"/>
+                    </StackPanel>
+                </Canvas>
+                <Canvas Grid.Row="0" Grid.Column="1">
+                    <Image x:Name="ImageCloserFurther" Stretch="Fill" Source="/GamesForKids/GamesForKidsImage/CloserFurther.png" 
+                       Width="30" Height="20" Canvas.Left="7" Canvas.Top="1" MouseDown="ImageCloserFurther_MouseDown"/>
+                    <StackPanel Canvas.Top="14" Width="43" Margin="0 7 0 0">
+                        <TextBlock Text="Ближе-дальше" FontWeight="Bold" FontSize="4" TextAlignment="Center"/>
+                    </StackPanel>
+                </Canvas>
+                <Canvas Grid.Row="0" Grid.Column="2">
+                    <Image x:Name="ImageBouquetOfFlowers" Stretch="Fill" Source="/GamesForKids/GamesForKidsImage/BouquetOfFlowers.png" 
+                       Width="30" Height="20" Canvas.Left="7" Canvas.Top="1" MouseDown="ImageBouquetOfFlowers_MouseDown"/>
+                    <StackPanel Canvas.Top="14" Width="43" Margin="0 7 0 0">
+                        <TextBlock Text="Букет цветов" FontWeight="Bold" FontSize="4" TextAlignment="Center"/>
+                    </StackPanel>
+                </Canvas>
+                <Canvas Grid.Row="0" Grid.Column="3">
+                    <Image x:Name="ImageRhomb" Stretch="Fill" Source="/GamesForKids/GamesForKidsImage/Rhomb.png"
+                      Width="30" Height="20" Canvas.Left="7" Canvas.Top="1" MouseDown="ImageRhomb_MouseDown"/>
+                    <StackPanel Canvas.Top="14" Width="43" Margin="0 7 0 0">
+                        <TextBlock Text="Ромб" FontWeight="Bold" FontSize="4" TextAlignment="Center"/>
+                    </StackPanel>
+                </Canvas>
+                <Canvas Grid.Row="1" Grid.Column="0" >
+                    <Image x:Name="ImageRectangle" Stretch="Fill" Source="/GamesForKids/GamesForKidsImage/Rectangle.png"
+                       Width="30" Height="20" Canvas.Left="7" Canvas.Top="1" MouseDown="ImageRectangle_MouseDown"/>
+                    <StackPanel Canvas.Top="14" Width="43" Margin="0 7 0 0">
+                        <TextBlock Text="Прямоугольник" FontWeight="Bold" FontSize="4" TextAlignment="Center"/>
+                    </StackPanel>
+                </Canvas>
+                <Canvas Grid.Row="1" Grid.Column="1" >
+                    <Image x:Name="ImageTriangle" Stretch="Fill" Source="/GamesForKids/GamesForKidsImage/Triangle.png"
+                       Width="30" Height="20" Canvas.Left="7" Canvas.Top="1" MouseDown="ImageTriangle_MouseDown"/>
+                    <StackPanel Canvas.Top="14" Width="43" Margin="0 7 0 0">
+                        <TextBlock  Text="Треугольник" FontWeight="Bold" FontSize="4" TextAlignment="Center"/>
+                    </StackPanel>
+                </Canvas>
+                <Canvas Grid.Row="1" Grid.Column="2">
+                    <Image x:Name="ImageSquare" Stretch="Fill" Source="/GamesForKids/GamesForKidsImage/Square.png"
+                       Width="30" Height="20" Canvas.Left="7" Canvas.Top="1" MouseDown="ImageSquare_MouseDown"/>
+                    <StackPanel Canvas.Top="14" Width="43" Margin="0 7 0 0">
+                        <TextBlock Text="Квадрат" FontWeight="Bold" FontSize="4" TextAlignment="Center"/>
+                    </StackPanel>
+                </Canvas>
+                <Canvas Grid.Row="1" Grid.Column="3">
+                    <Image x:Name="ImageOval" Stretch="Fill" Source="/GamesForKids/GamesForKidsImage/Oval.png"
+                       Width="30" Height="20" Canvas.Left="7" Canvas.Top="1" MouseDown="ImageOval_MouseDown"/>
+                    <StackPanel Canvas.Top="14" Width="43" Margin="0 7 0 0">
+                        <TextBlock Text="Овал" FontWeight="Bold" FontSize="4" TextAlignment="Center"/>
+                    </StackPanel>
+                </Canvas>
+            </Grid>
+        </Grid>
+    </Viewbox>
+</Page>

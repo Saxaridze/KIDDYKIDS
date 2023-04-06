@@ -1,14 +1,18 @@
-﻿<Page x:Class="KIDDYKIDS.PageGamesForKids"
+﻿<Page x:Class="KIDDYKIDS.GamesForKids.PageGameWiderNarrower"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:KIDDYKIDS"
+      xmlns:local="clr-namespace:KIDDYKIDS.GamesForKids"
       mc:Ignorable="d" 
-      d:DesignHeight="700" d:DesignWidth="1300"
-      Title="PageGamesForKids">
+      d:DesignHeight="550" d:DesignWidth="1300"
+      Title="PageGameWiderNarrower">
 
     <Grid Background="#FFCAFFF8">
-        
+        <Viewbox>
+            <Grid>
+                
+            </Grid>
+        </Viewbox>
     </Grid>
 </Page>

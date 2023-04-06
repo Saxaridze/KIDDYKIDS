@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace KIDDYKIDS
+namespace KIDDYKIDS.GamesForKids
 {
     /// <summary>
-    /// Логика взаимодействия для PageGamesForKids.xaml
+    /// Логика взаимодействия для PageGameWiderNarrower.xaml
     /// </summary>
-    public partial class PageGamesForKids : Page
+    public partial class PageGameWiderNarrower : Page
     {
-        public PageGamesForKids()
+        public PageGameWiderNarrower()
         {
             InitializeComponent();
         }

@@ -17,6 +17,7 @@ using System.IO;
 using System.ComponentModel;
 using System.Windows.Markup;
 using System.Globalization;
+using KIDDYKIDS.GamesForKids;
 
 namespace KIDDYKIDS
 {
@@ -33,6 +34,7 @@ namespace KIDDYKIDS
 
             Manager.MainFrame = MainFrame;
             MainFrame.Navigate(new PageMain());
+
         }
 
         private void MainFrame_ContentRendered(object sender, EventArgs e)
