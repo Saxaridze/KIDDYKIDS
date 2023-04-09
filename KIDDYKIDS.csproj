@@ -153,6 +153,50 @@
   <ItemGroup>
     <Resource Include="GamesForKids\GamesForKidsImage\BouquetOfFlowers.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GamesForKids\GamesForKidsImage\WiderNarrower1.png" />
+    <Resource Include="GamesForKids\GamesForKidsImage\WiderNarrower10.png" />
+    <Resource Include="GamesForKids\GamesForKidsImage\WiderNarrower11.png" />
+    <Resource Include="GamesForKids\GamesForKidsImage\WiderNarrower12.png" />
+    <Resource Include="GamesForKids\GamesForKidsImage\WiderNarrower2.png" />
+    <Resource Include="GamesForKids\GamesForKidsImage\WiderNarrower3.png" />
+    <Resource Include="GamesForKids\GamesForKidsImage\WiderNarrower4.png" />
+    <Resource Include="GamesForKids\GamesForKidsImage\WiderNarrower5.png" />
+    <Resource Include="GamesForKids\GamesForKidsImage\WiderNarrower6.png" />
+    <Resource Include="GamesForKids\GamesForKidsImage\WiderNarrower7.png" />
+    <Resource Include="GamesForKids\GamesForKidsImage\WiderNarrower8.png" />
+    <Resource Include="GamesForKids\GamesForKidsImage\WiderNarrower9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Icone\ImageStar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Icone\ImageGame1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Icone\ImageGame2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Icone\ImageGame6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Icone\ImageGame4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Icone\ImageGame5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Icone\ImageGame3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Icone\ImageGame7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\KIDDYKIDSImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\KIDDYKIDSIcone.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.4.8.0\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.8.0\build\MaterialDesignThemes.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

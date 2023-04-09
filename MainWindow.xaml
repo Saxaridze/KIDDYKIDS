@@ -11,7 +11,7 @@
     <Window.Resources>
         <MediaPlayer x:Key="mediaPlayer"/>
     </Window.Resources>
-    
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"></RowDefinition>
@@ -23,8 +23,8 @@
             <Button x:Name="BtnBack" Click="BtnBack_Click"  HorizontalAlignment="Right" Margin="0,10,10,10" Width="150" Height="60" FontWeight="Bold" FontSize="36" >Назад</Button>
             <TextBlock FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding ElementName=MainFrame, Path=Content.Title}"></TextBlock>
             <StackPanel Orientation="Horizontal" >
-                <Image Margin="10"></Image>
-                <TextBlock VerticalAlignment="Center"></TextBlock>
+                <Image Margin="10" Stretch="Fill"  Source="/Image/KIDDYKIDSImage.png"></Image>
+                <TextBlock HorizontalAlignment="Center" Text="KIDDYKIDS" FontWeight="Bold" FontSize="36" VerticalAlignment="Center"></TextBlock>
             </StackPanel>
         </Grid>
 
