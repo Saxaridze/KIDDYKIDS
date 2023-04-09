@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KIDDYKIDS"
         mc:Ignorable="d"
-        Title="{Binding ElementName=MainFrame, Path=Content.Title}" Height="700" Width="1300" WindowStartupLocation="CenterScreen">
+        Title="{Binding ElementName=MainFrame, Path=Content.Title}" Height="700" Width="1300" WindowStartupLocation="CenterScreen" Icon="KIDDYKIDSIcone.png">
 
     <Window.Resources>
         <MediaPlayer x:Key="mediaPlayer"/>
