@@ -123,11 +123,19 @@ namespace KIDDYKIDS.LogicThinkingGames
                 MyCanvas.Children.Remove(y);
             }
 
-            if (missedBalloons > 2)
+            if (missedBalloons > 3)
             {
                 gameIsActive = false;
                 gameTimer.Stop();
-                MessageBox.Show("Конец игры вы пропустили 2 шара" + Environment.NewLine + "Нажмите кнопку чтобы начать заново");
+                MessageBoxResult result = MessageBox.Show("Конец игры вы пропустили 3 шара" + Environment.NewLine + "Нажмите кнопку ДА чтобы начать заново", "!!!", MessageBoxButton.YesNo);
+                switch (result)
+                {
+                    case MessageBoxResult.Yes:
+                        break;
+                    case MessageBoxResult.No:
+                        this.Close();
+                        break;
+                }
                 RestartGame();
             }
             if (score > 10)
