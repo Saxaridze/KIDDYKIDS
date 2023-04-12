@@ -142,8 +142,7 @@ namespace KIDDYKIDS.GamesForKids
             }
             else if (Otvet == 0)
             {
-                TxtItoge.Text = "!";
-                TxtItoge.Text = Convert.ToString(Otvet);
+                TxtItoge.Text = "=(";
                 TxtItoge.Visibility = Visibility.Visible;
             }
         }

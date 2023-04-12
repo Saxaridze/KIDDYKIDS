@@ -1,0 +1,63 @@
+﻿<Page x:Class="KIDDYKIDS.LogicThinkingGames.PageLogicThinkingGames"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KIDDYKIDS.LogicThinkingGames"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="1300"
+      Title="Игры на логику и мышление">
+
+    <Viewbox>
+        <Grid  Height="93" Width="220" Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Canvas>
+                    <Image x:Name="ImageTheFourthExtra" Stretch="Fill" Source="/LogicThinkingGames/LogicThinkingGamesImage/TheFourthExtra.png" 
+                       Width="30" Height="20" Canvas.Left="9" Canvas.Top="7" MouseDown="ImageTheFourthExtra_MouseDown"/>
+                    <StackPanel Canvas.Top="29" Width="50">
+                        <TextBlock TextWrapping="Wrap" FontWeight="Bold" FontSize="4" TextAlignment="Center">"Четвертый лишний"</TextBlock>
+                    </StackPanel>
+                </Canvas>
+                <Canvas Grid.Row="0" Grid.Column="1">
+                    <Image x:Name="ImageColoredShapes" Stretch="Fill" Source="/LogicThinkingGames/LogicThinkingGamesImage/ColoredShapes.png" 
+                       Width="30" Height="20" Canvas.Left="9" Canvas.Top="7" MouseDown="ImageColoredShapes_MouseDown"/>
+                    <StackPanel Canvas.Top="14" Width="50" Margin="0 15 0 0">
+                        <TextBlock TextWrapping="Wrap" FontWeight="Bold" FontSize="4" TextAlignment="Center">"Цветные фигуры"</TextBlock>
+                    </StackPanel>
+                </Canvas>
+                <Canvas Grid.Row="0" Grid.Column="2">
+                    <Image x:Name="ImageAssociations" Stretch="Fill" Source="/LogicThinkingGames/LogicThinkingGamesImage/Associations.png" 
+                       Width="30" Height="20" Canvas.Left="9" Canvas.Top="7" MouseDown="ImageAssociations_MouseDown"/>
+                    <StackPanel Canvas.Top="14" Width="50" Margin="0 15 0 0">
+                        <TextBlock TextWrapping="Wrap" FontWeight="Bold" FontSize="4" TextAlignment="Center">"Ассоциации"</TextBlock>
+                    </StackPanel>
+                </Canvas>
+                <Canvas Grid.Row="0" Grid.Column="3">
+                    <Image x:Name="ImageZveryataConfectioners" Stretch="Fill" Source="/LogicThinkingGames\LogicThinkingGamesImage\BalloonPopping.png"
+                      Width="30" Height="20" Canvas.Left="9" Canvas.Top="7" MouseDown="ImageBalloonPoppings_MouseDown"/>
+                    <StackPanel Canvas.Top="14" Width="50" Margin="0 15 0 0">
+                        <TextBlock TextWrapping="Wrap" FontWeight="Bold" FontSize="4" TextAlignment="Center">"Воздушные шарики"</TextBlock>
+                    </StackPanel>
+                </Canvas>
+            </Grid>
+        </Grid>
+    </Viewbox>
+</Page>

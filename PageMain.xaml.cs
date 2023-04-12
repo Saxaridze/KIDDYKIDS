@@ -33,17 +33,17 @@ namespace KIDDYKIDS
 
         private void BtnEducationalGames_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Uri("EducationalGames/PageEducationalGames.xaml", UriKind.Relative));
         }
 
         private void BtnGamesForAttention_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Uri("GamesAttentionMemory/PageGamesAttentionMemory.xaml", UriKind.Relative));
         }
 
         private void BtnLogicAndThinkingGames_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Uri("LogicThinkingGames/PageLogicThinkingGames.xaml", UriKind.Relative));
         }
 
         private void BtnColoringPages_Click(object sender, RoutedEventArgs e)

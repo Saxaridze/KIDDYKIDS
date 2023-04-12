@@ -1,0 +1,92 @@
+﻿<Page x:Class="KIDDYKIDS.GamesAttentionMemory.PageGamesAttentionMemory"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KIDDYKIDS.GamesAttentionMemory"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="1300"
+      Title="Игры на внимание и память">
+
+    <Viewbox>
+        <Grid  Height="93" Width="220" Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Canvas>
+                    <Image x:Name="ImageKnittedSet" Stretch="Fill" Source="/GamesAttentionMemory/GamesAttentionMemoryImage/KnittedSet.png" 
+                       Width="30" Height="20" Canvas.Left="9" Canvas.Top="7" MouseDown="ImageKnittedSet_MouseDown"/>
+                    <StackPanel Canvas.Top="29" Width="50">
+                        <TextBlock Text="Вязаный комплект" FontWeight="Bold" FontSize="4" TextAlignment="Center"/>
+                    </StackPanel>
+                </Canvas>
+                <Canvas Grid.Row="0" Grid.Column="1">
+                    <Image x:Name="ImageNewYear" Stretch="Fill" Source="/GamesAttentionMemory/GamesAttentionMemoryImage/NewYear.png" 
+                       Width="30" Height="20" Canvas.Left="9" Canvas.Top="7" MouseDown="ImageNewYear_MouseDown"/>
+                    <StackPanel Canvas.Top="14" Width="50" Margin="0 15 0 0">
+                        <TextBlock TextWrapping="Wrap" FontWeight="Bold" FontSize="4" TextAlignment="Center">Найди тень "Новый год"</TextBlock>
+                    </StackPanel>
+                </Canvas>
+                <Canvas Grid.Row="0" Grid.Column="2">
+                    <Image x:Name="ImageDwarves" Stretch="Fill" Source="/GamesAttentionMemory/GamesAttentionMemoryImage/Dwarves.png" 
+                       Width="30" Height="20" Canvas.Left="9" Canvas.Top="7" MouseDown="ImageDwarves_MouseDown"/>
+                    <StackPanel Canvas.Top="14" Width="50" Margin="0 15 0 0">
+                        <TextBlock TextWrapping="Wrap" FontWeight="Bold" FontSize="4" TextAlignment="Center">Найди на картинке "Гномы"</TextBlock>
+                    </StackPanel>
+                </Canvas>
+                <Canvas Grid.Row="0" Grid.Column="3">
+                    <Image x:Name="ImageZveryataConfectioners" Stretch="Fill" Source="/GamesAttentionMemory/GamesAttentionMemoryImage/ZveryataConfectioners.png"
+                      Width="30" Height="20" Canvas.Left="9" Canvas.Top="7" MouseDown="ImageZveryataConfectioners_MouseDown"/>
+                    <StackPanel Canvas.Top="14" Width="50" Margin="0 15 0 0">
+                        <TextBlock TextWrapping="Wrap" FontWeight="Bold" FontSize="4" TextAlignment="Center">Найди отличия "Зверята-кондитеры"</TextBlock>
+                    </StackPanel>
+                </Canvas>
+                <Canvas Grid.Row="1" Grid.Column="0" >
+                    <Image x:Name="ImageSantaClaus" Stretch="Fill" Source="/GamesAttentionMemory/GamesAttentionMemoryImage/SantaClaus.png"
+                       Width="30" Height="20" Canvas.Left="9" Canvas.Top="7" MouseDown="ImageSantaClaus_MouseDown"/>
+                    <StackPanel Canvas.Top="14" Width="50" Margin="0 15 0 0">
+                        <TextBlock TextWrapping="Wrap" FontWeight="Bold" FontSize="4" TextAlignment="Center">Найди отличия "Санта-Клаус"</TextBlock>
+                    </StackPanel>
+                </Canvas>
+                <Canvas Grid.Row="1" Grid.Column="1" >
+                    <Image x:Name="ImageTaxi" Stretch="Fill" Source="/GamesAttentionMemory/GamesAttentionMemoryImage/Taxi.png"
+                       Width="30" Height="20" Canvas.Left="9" Canvas.Top="7" MouseDown="ImageTaxi_MouseDown"/>
+                    <StackPanel Canvas.Top="14" Width="50" Margin="0 15 0 0">
+                        <TextBlock TextWrapping="Wrap" FontWeight="Bold" FontSize="4" TextAlignment="Center">Лабиринт "Такси"</TextBlock>
+                    </StackPanel>
+                </Canvas>
+                <Canvas Grid.Row="1" Grid.Column="2">
+                    <Image x:Name="ImageTheSpaceship" Stretch="Fill" Source="/GamesAttentionMemory/GamesAttentionMemoryImage/TheSpaceship.png"
+                       Width="30" Height="20" Canvas.Left="9" Canvas.Top="7" MouseDown="ImageTheSpaceship_MouseDown"/>
+                    <StackPanel Canvas.Top="14" Width="50" Margin="0 15 0 0">
+                        <TextBlock TextWrapping="Wrap" FontWeight="Bold" FontSize="4" TextAlignment="Center">Лабиринт "Космический корабль"</TextBlock>
+                    </StackPanel>
+                </Canvas>
+                <Canvas Grid.Row="1" Grid.Column="3">
+                    <Image x:Name="ImageChristmas" Stretch="Fill" Source="/GamesAttentionMemory/GamesAttentionMemoryImage/Christmas.png"
+                       Width="30" Height="20" Canvas.Left="9" Canvas.Top="7" MouseDown="ImageChristmas_MouseDown"/>
+                    <StackPanel Canvas.Top="14" Width="50" Margin="0 15 0 0">
+                        <TextBlock TextWrapping="Wrap" FontWeight="Bold" FontSize="4" TextAlignment="Center">Найди отличия "Рождество"</TextBlock>
+                    </StackPanel>
+                </Canvas>
+            </Grid>
+        </Grid>
+    </Viewbox>
+</Page>

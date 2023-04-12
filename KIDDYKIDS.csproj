@@ -66,11 +66,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="EducationalGames\PageEducationalGames.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GamesAttentionMemory\PageGamesAttentionMemory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GamesForKids\PageGamesForKids.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="GamesForKids\PageGameWiderNarrower.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LogicThinkingGames\PageLogicThinkingGames.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LogicThinkingGames\WindowsGameBalloonPoppings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -82,11 +98,23 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="EducationalGames\PageEducationalGames.xaml.cs">
+      <DependentUpon>PageEducationalGames.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GamesAttentionMemory\PageGamesAttentionMemory.xaml.cs">
+      <DependentUpon>PageGamesAttentionMemory.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GamesForKids\PageGamesForKids.xaml.cs">
       <DependentUpon>PageGamesForKids.xaml</DependentUpon>
     </Compile>
     <Compile Include="GamesForKids\PageGameWiderNarrower.xaml.cs">
       <DependentUpon>PageGameWiderNarrower.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LogicThinkingGames\PageLogicThinkingGames.xaml.cs">
+      <DependentUpon>PageLogicThinkingGames.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LogicThinkingGames\WindowsGameBalloonPoppings.xaml.cs">
+      <DependentUpon>WindowsGameBalloonPoppings.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -200,6 +228,38 @@
   <ItemGroup>
     <Resource Include="KIDDYKIDSIcone.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="LogicThinkingGames\LogicThinkingGamesImage\background-Image.jpg" />
+    <Resource Include="LogicThinkingGames\LogicThinkingGamesImage\balloon1.png" />
+    <Resource Include="LogicThinkingGames\LogicThinkingGamesImage\balloon2.png" />
+    <Resource Include="LogicThinkingGames\LogicThinkingGamesImage\balloon3.png" />
+    <Resource Include="LogicThinkingGames\LogicThinkingGamesImage\balloon4.png" />
+    <Resource Include="LogicThinkingGames\LogicThinkingGamesImage\balloon5.png" />
+    <Content Include="LogicThinkingGames\LogicThinkingGamesImage\pop_sound.mp3" />
+    <Resource Include="LogicThinkingGames\LogicThinkingGamesImage\BalloonPopping.png" />
+    <Resource Include="LogicThinkingGames\LogicThinkingGamesImage\Associations.png" />
+    <Resource Include="LogicThinkingGames\LogicThinkingGamesImage\ColoredShapes.png" />
+    <Resource Include="LogicThinkingGames\LogicThinkingGamesImage\TheFourthExtra.png" />
+    <Resource Include="GamesAttentionMemory\GamesAttentionMemoryImage\Christmas.png" />
+    <Resource Include="GamesAttentionMemory\GamesAttentionMemoryImage\Dwarves.png" />
+    <Resource Include="GamesAttentionMemory\GamesAttentionMemoryImage\ForMushrooms.png" />
+    <Resource Include="GamesAttentionMemory\GamesAttentionMemoryImage\KnittedSet.png" />
+    <Resource Include="GamesAttentionMemory\GamesAttentionMemoryImage\NewYear.png" />
+    <Resource Include="GamesAttentionMemory\GamesAttentionMemoryImage\SantaClaus.png" />
+    <Resource Include="GamesAttentionMemory\GamesAttentionMemoryImage\Taxi.png" />
+    <Resource Include="GamesAttentionMemory\GamesAttentionMemoryImage\TheSpaceship.png" />
+    <Resource Include="GamesAttentionMemory\GamesAttentionMemoryImage\ZveryataConfectioners.png" />
+    <Content Include="Sound\TwirlyTops.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="EducationalGames\EducationalGamesImage\Animals.png" />
+    <Resource Include="EducationalGames\EducationalGamesImage\FruitsVegetables.png" />
+    <Resource Include="EducationalGames\EducationalGamesImage\Shades.png" />
+    <Resource Include="EducationalGames\EducationalGamesImage\TypesTransport.png" />
+    <Resource Include="EducationalGames\EducationalGamesImage\WhatCooked.png" />
+    <Resource Include="EducationalGames\EducationalGamesImage\WhatGrows.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.4.8.0\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.8.0\build\MaterialDesignThemes.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

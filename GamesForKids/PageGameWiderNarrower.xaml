@@ -9,7 +9,7 @@
       Title="Шире-Уже" Loaded="Page_Loaded">
 
     <Viewbox>
-        <Grid Background="#FFCAFFF8" Height="93" Width="220">
+        <Grid Background="White" Height="93" Width="220">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="8"/>
                 <ColumnDefinition/>
@@ -39,7 +39,7 @@
                     </Canvas>
                 </Grid>
                 <Grid Grid.Row="0" Grid.Column="2" Grid.RowSpan="3">
-                    <Ellipse x:Name="ElpsCenter" Fill="#FFC94883"
+                    <Rectangle x:Name="ElpsCenter" Fill="#FFC94883"
                         StrokeThickness="1" StrokeDashArray="1 1"
                         Stroke="#FF470441" StrokeDashCap="Round" Margin="8,20,8,0" />
                 </Grid>

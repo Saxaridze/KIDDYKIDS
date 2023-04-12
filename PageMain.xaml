@@ -9,7 +9,7 @@
       d:DesignHeight="550" d:DesignWidth="1300"
       Title="Главная">
 
-    <Grid Background="#FFCAFFF8">
+    <Grid Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition/>
