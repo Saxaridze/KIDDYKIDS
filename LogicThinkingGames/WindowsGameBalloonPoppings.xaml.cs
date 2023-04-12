@@ -130,6 +130,26 @@ namespace KIDDYKIDS.LogicThinkingGames
                 MessageBox.Show("Конец игры вы пропустили 2 шара" + Environment.NewLine + "Нажмите кнопку чтобы начать заново");
                 RestartGame();
             }
+            if (score > 10)
+            {
+                speed = 8;
+            }
+            else if (score > 20)
+            {
+                speed = 10;
+            }
+            else if (score > 30)
+            {
+                speed = 12;
+            }
+            else if (score > 40)
+            {
+                speed = 14;
+            }
+            else if (score > 50)
+            {
+                speed = 16;
+            }
         }
 
         private void popBalloons(object sender, MouseButtonEventArgs e)
@@ -156,7 +176,7 @@ namespace KIDDYKIDS.LogicThinkingGames
             score = 0;
             intervals = 90;
             gameIsActive = true;
-            speed = 3;
+            speed = 6;
         }
 
         private void RestartGame()
