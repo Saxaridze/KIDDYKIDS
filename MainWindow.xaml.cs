@@ -53,7 +53,7 @@ namespace KIDDYKIDS
 
         private void BtnTurnONMusic_Click(object sender, RoutedEventArgs e)
         {
-            player.Open(new Uri("../../Sound/TwirlyTops.wav", UriKind.RelativeOrAbsolute));
+            player.Open(new Uri("../../Sound/TwirlyTops.mp3", UriKind.RelativeOrAbsolute));
             player.Play();
             BtnTurnONMusic.Visibility = Visibility.Hidden;
             BtnTurnOFFMusic.Visibility = Visibility.Visible;

@@ -259,7 +259,7 @@
     <Resource Include="GamesAttentionMemory\GamesAttentionMemoryImage\Taxi.png" />
     <Resource Include="GamesAttentionMemory\GamesAttentionMemoryImage\TheSpaceship.png" />
     <Resource Include="GamesAttentionMemory\GamesAttentionMemoryImage\ZveryataConfectioners.png" />
-    <Content Include="Sound\TwirlyTops.wav" />
+    <Content Include="Sound\TwirlyTops.mp3" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="EducationalGames\EducationalGamesImage\Animals.png" />
