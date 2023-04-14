@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KIDDYKIDS.LogicThinkingGames"
         mc:Ignorable="d"
-        Title="Воздушные шарики" Height="800" Width="1650" KeyDown="canvasKeyIsDown"  ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+        Title="Воздушные шарики" Height="800" Width="1650" KeyDown="canvasKeyIsDown"  ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen"
+        Closing="Window_Closing">
     <Canvas Name="MyCanvas" Focusable="True" MouseLeftButtonDown="popBalloons"  Background="White">
         <Label Name="scoreLabel" FontSize="36" Content="Поймано: 0" Foreground="black" FontWeight="ExtraBold" Canvas.Top="690" Canvas.Left="24" />
     </Canvas>

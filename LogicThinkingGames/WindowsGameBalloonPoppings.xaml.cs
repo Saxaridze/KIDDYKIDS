@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 
+
 namespace KIDDYKIDS.LogicThinkingGames
 {
     /// <summary>
@@ -127,16 +128,18 @@ namespace KIDDYKIDS.LogicThinkingGames
             {
                 gameIsActive = false;
                 gameTimer.Stop();
-                MessageBoxResult result = MessageBox.Show("Конец игры вы пропустили 3 шара" + Environment.NewLine + "Нажмите кнопку ДА чтобы начать заново", "!!!", MessageBoxButton.YesNo);
+                MessageBoxResult result = MessageBox.Show("Конец игры вы пропустили 3 шара" +
+                    Environment.NewLine + "Нажмите кнопку ДА чтобы начать заново", "!!!", MessageBoxButton.YesNo);
                 switch (result)
                 {
                     case MessageBoxResult.Yes:
+                        RestartGame();
                         break;
                     case MessageBoxResult.No:
+                        gameTimer.Stop();
                         this.Close();
                         break;
                 }
-                RestartGame();
             }
             if (score > 10)
             {
@@ -207,6 +210,11 @@ namespace KIDDYKIDS.LogicThinkingGames
         private void canvasKeyIsDown(object sender, KeyEventArgs e)
         {
 
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            gameTimer.Stop();
         }
     }
 }

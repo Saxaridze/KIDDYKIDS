@@ -1,0 +1,36 @@
+﻿<Page x:Class="KIDDYKIDS.PageStart"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KIDDYKIDS"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="1000"
+      Title="Главная">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5"/>
+            <RowDefinition/>
+            <RowDefinition Height="5"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock TextWrapping="Wrap" Margin="5" TextAlignment="Left" FontSize="24" Width="870"
+                           Text="       Ваш ребёнок ещё такой маленький, и его надо многому научить. Как же это сделать, если ребёнок не может сосредоточиться и усидеть на месте?"/>
+                <TextBlock TextWrapping="Wrap" Margin="5" TextAlignment="Left" FontSize="24" Width="870"
+                           Text="       На помощь вам придёт KIDDYKIDS. Наши развивающие компьютерные игры заинтересуют и удержат внимание ребёнка. Выполняя игровые задания, ваш малыш понемногу будет познавать то, что пригодится при дальнейшем обучении в детском садике и школе."/>
+                <TextBlock TextWrapping="Wrap" Margin="5" TextAlignment="Left" FontSize="24" Width="870"
+                           Text="       А теперь вперед играть! Ведь ребёнок это любит больше всего на свете! И не забудьте похвалить ребёнка за пусть даже незначительные достижения!"/>
+                <Button x:Name="BtnStart" Click="BtnStart_Click"
+                            Margin="5,50,10,10" Width="350" Height="50" FontWeight="Bold" FontSize="20" FontFamily="Sitka Text">Играемся!</Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

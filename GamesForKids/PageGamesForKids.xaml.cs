@@ -27,7 +27,8 @@ namespace KIDDYKIDS.GamesForKids
 
         private void ImageWiderNarrower_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri("GamesForKids/PageGameWiderNarrower.xaml", UriKind.Relative));
+            WindowGameWiderNarrower taskWindow = new WindowGameWiderNarrower();
+            taskWindow.Show();
         }
 
         private void ImageCloserFurther_MouseDown(object sender, MouseButtonEventArgs e)

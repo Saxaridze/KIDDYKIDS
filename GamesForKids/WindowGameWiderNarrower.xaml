@@ -1,0 +1,110 @@
+﻿<Window x:Class="KIDDYKIDS.GamesForKids.WindowGameWiderNarrower"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KIDDYKIDS.GamesForKids"
+        mc:Ignorable="d"
+       Title="Шире-Уже" Height="800" Width="1650" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border Canvas.ZIndex="1" x:Name="BorderStart" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Grid.RowSpan="6" 
+                    Width="1400" Height="600" Background="#FFE24646" BorderThickness="10"
+                    BorderBrush="Silver"  CornerRadius="550,550,550,550">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50" Height="600" Width="1000">
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="56" Margin="0 100 0 0"
+                                           Text="Внимательно посмотри на две картинки и определи, какой изображенный предмет шире, а какой уже!" FontWeight="Bold"/>
+                    <Button x:Name="BtnGameStart" Click="BtnGameStart_Click"
+                            Margin="5,50,10,10" Width="650" Height="100" FontWeight="Bold" FontSize="48" FontFamily="Sitka Text">Играть!</Button>
+                </StackPanel>
+            </Border>
+            <Grid Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock x:Name="TxtOtvet" Text="Что Шире?" FontWeight="Bold" FontSize="72" TextAlignment="Center"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="2" Grid.RowSpan="4">
+                <Rectangle x:Name="ElpsCenter" Fill="#FFC94883"
+                        StrokeThickness="5" StrokeDashArray="1 1"
+                        Stroke="#FF470441" StrokeDashCap="Round" Margin="0,-5,0,21"/>
+            </Grid>
+            <Grid Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="22" Grid.ColumnSpan="5" Width="1544">
+                <Rectangle x:Name="ElpsTop" Fill="#FFC94883"
+                        StrokeThickness="5" StrokeDashArray="1 1"
+                        Stroke="#FF470441" StrokeDashCap="Round" Margin="-50,0"/>
+            </Grid>
+            <Grid Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="22" Grid.ColumnSpan="5" Width="1544">
+                <Rectangle x:Name="ElpsBot" Fill="#FFC94883"
+                        StrokeThickness="5" StrokeDashArray="1 1"
+                        Stroke="#FF470441" StrokeDashCap="Round" Margin="-50,0"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="3" Width="500" Height="400">
+                <Image x:Name="ImageOtvet1" Stretch="Uniform"  Source="/GamesForKids/GamesForKidsImage/WiderNarrower1.png" Visibility="Visible"
+                           MouseDown="ImageOtvet1_MouseDown"/>
+                <Image x:Name="ImageOtvet3" Stretch="Uniform"  Source="/GamesForKids/GamesForKidsImage/WiderNarrower3.png" Visibility="Hidden"
+                           MouseDown="ImageOtvet3_MouseDown"/>
+                <Image x:Name="ImageOtvet5" Stretch="Uniform"  Source="/GamesForKids/GamesForKidsImage/WiderNarrower5.png" Visibility="Hidden"/>
+                <Image x:Name="ImageOtvet7" Stretch="Uniform"  Source="/GamesForKids/GamesForKidsImage/WiderNarrower7.png" Visibility="Hidden"
+                           MouseDown="ImageOtvet7_MouseDown"/>
+                <Image x:Name="ImageOtvet9" Stretch="Uniform" Source="/GamesForKids/GamesForKidsImage/WiderNarrower9.png" Visibility="Hidden"/>
+                <Image x:Name="ImageOtvet11" Stretch="Uniform" Source="/GamesForKids/GamesForKidsImage/WiderNarrower11.png" Visibility="Hidden"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" Grid.RowSpan="3" Width="500" Height="400">
+                <Image x:Name="ImageOtvet2" Stretch="Uniform"  Source="/GamesForKids/GamesForKidsImage/WiderNarrower2.png" Visibility="Visible"/>
+                <Image x:Name="ImageOtvet4" Stretch="Uniform"  Source="/GamesForKids/GamesForKidsImage/WiderNarrower4.png" Visibility="Hidden"/>
+                <Image x:Name="ImageOtvet6" Stretch="Uniform"  Source="/GamesForKids/GamesForKidsImage/WiderNarrower6.png" Visibility="Hidden"
+                           MouseDown="ImageOtvet6_MouseDown"/>
+                <Image x:Name="ImageOtvet8" Stretch="Uniform"  Source="/GamesForKids/GamesForKidsImage/WiderNarrower8.png" Visibility="Hidden"/>
+                <Image x:Name="ImageOtvet10" Stretch="Uniform"  Source="/GamesForKids/GamesForKidsImage/WiderNarrower10.png" Visibility="Hidden"
+                           MouseDown="ImageOtvet10_MouseDown"/>
+                <Image x:Name="ImageOtvet12" Stretch="Uniform"  Source="/GamesForKids/GamesForKidsImage/WiderNarrower12.png" Visibility="Hidden"
+                           MouseDown="ImageOtvet12_MouseDown"/>
+            </Grid>
+            <Grid x:Name="GridItog" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Grid.RowSpan="3">
+                <TextBlock x:Name="TxtItoge" Text="УМНИЦА!" FontWeight="Bold" FontSize="86" TextAlignment="Center" Visibility="Hidden" Margin="0 50 0 0"
+                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 300 0 0">
+                    <Button x:Name="BtnRestartGame" Click="BtnRestartGame_Click" HorizontalAlignment="Right" Margin="5,10,10,10" Width="350" Height="90" FontWeight="Bold" FontSize="48" FontFamily="Sitka Text" Visibility="Hidden">Повторить</Button>
+                    <Button x:Name="BtnCloseGame" Click="BtnCloseGame_Click" HorizontalAlignment="Right" Margin="40,10,10,10" Width="350" Height="90" FontWeight="Bold" FontSize="48" FontFamily="Sitka Text" Visibility="Hidden">Закончить</Button>
+                </StackPanel>
+            </Grid>
+            
+            <Grid Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="5" Grid.RowSpan="3">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Image x:Name="ImageStar1" Stretch="Uniform"  Source="/Image/Icone/ImageStar.png" Visibility="Hidden"/>
+                    <Image x:Name="ImageStar2" Stretch="Uniform"  Source="/Image/Icone/ImageStar.png" Visibility="Hidden"/>
+                    <Image x:Name="ImageStar3" Stretch="Uniform"  Source="/Image/Icone/ImageStar.png" Visibility="Hidden"/>
+                    <Image x:Name="ImageStar4" Stretch="Uniform"  Source="/Image/Icone/ImageStar.png" Visibility="Hidden"/>
+                    <Image x:Name="ImageStar5" Stretch="Uniform"  Source="/Image/Icone/ImageStar.png" Visibility="Hidden"/>
+                    <Image x:Name="ImageStar6" Stretch="Uniform"  Source="/Image/Icone/ImageStar.png" Visibility="Hidden"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

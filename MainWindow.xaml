@@ -6,7 +6,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KIDDYKIDS"
         mc:Ignorable="d"
-        Title="{Binding ElementName=MainFrame, Path=Content.Title}" Height="700" Width="1300" WindowStartupLocation="CenterScreen" Icon="KIDDYKIDSIcone.png">
+        Title="{Binding ElementName=MainFrame, Path=Content.Title}" WindowStartupLocation="CenterScreen" Icon="KIDDYKIDSIcone.png"
+        MinHeight="700" MinWidth="1000" ResizeMode="NoResize" Height="700" Width="1000">
 
     <Window.Resources>
         <MediaPlayer x:Key="mediaPlayer"/>
@@ -21,24 +22,25 @@
             <RowDefinition Height="50"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Grid Background="#FFCAFFF8">
+        <Grid Background="#FF9800">
             <Button x:Name="BtnBack" Click="BtnBack_Click"  HorizontalAlignment="Right" Margin="0,10,10,10" Width="150" Height="60" FontWeight="Bold" FontSize="36" FontFamily="Sitka Text" >Назад</Button>
-            <TextBlock FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding ElementName=MainFrame, Path=Content.Title}"></TextBlock>
+            <TextBlock FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding ElementName=MainFrame, Path=Content.Title}"></TextBlock>
             <StackPanel Orientation="Horizontal" >
                 <Image Margin="10" Stretch="Fill"  Source="/Image/KIDDYKIDSImage.png"></Image>
-                <TextBlock  HorizontalAlignment="Center" Text="KIDDYKIDS" FontWeight="Bold" FontSize="36" VerticalAlignment="Center" ></TextBlock>
             </StackPanel>
         </Grid>
 
         <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered"
-               BorderBrush="LimeGreen" BorderThickness="2"/>
+               BorderBrush="Yellow" BorderThickness="2"/>
 
-        <Grid Grid.Row="2" Background="#FFCAFFF8">
+        <Grid Grid.Row="2" Background="#FF9800">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
-                <Button x:Name="BtnTurnONMusic" Click="BtnTurnONMusic_Click" Margin="20 0 0 0" Cursor="Hand">
+                <Button x:Name="BtnTurnONMusic" Click="BtnTurnONMusic_Click"
+                        Margin="20 0 0 0" Cursor="Hand" Width="70" Height="40"> 
                     <Image Stretch="Fill" Source="/Image/Icone/ON.png"/>
                 </Button>
-                <Button x:Name="BtnTurnOFFMusic" Click="BtnTurnOFFMusic_Click" Margin="-63 0 0 0 " Visibility="Hidden">
+                <Button x:Name="BtnTurnOFFMusic" Click="BtnTurnOFFMusic_Click"
+                        Margin="-70 0 0 0 " Visibility="Hidden" Width="70" Height="40">
                     <Image Stretch="Fill" Source="/Image/Icone/OFF.png"/>
                 </Button>
             </StackPanel>

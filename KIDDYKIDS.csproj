@@ -78,7 +78,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GamesForKids\PageGameWiderNarrower.xaml">
+    <Page Include="GamesForKids\WindowGameWiderNarrower.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -107,8 +107,8 @@
     <Compile Include="GamesForKids\PageGamesForKids.xaml.cs">
       <DependentUpon>PageGamesForKids.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GamesForKids\PageGameWiderNarrower.xaml.cs">
-      <DependentUpon>PageGameWiderNarrower.xaml</DependentUpon>
+    <Compile Include="GamesForKids\WindowGameWiderNarrower.xaml.cs">
+      <DependentUpon>WindowGameWiderNarrower.xaml</DependentUpon>
     </Compile>
     <Compile Include="LogicThinkingGames\PageLogicThinkingGames.xaml.cs">
       <DependentUpon>PageLogicThinkingGames.xaml</DependentUpon>
@@ -128,6 +128,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PageStart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Manager.cs" />
@@ -136,6 +140,9 @@
     </Compile>
     <Compile Include="PageMain.xaml.cs">
       <DependentUpon>PageMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageStart.xaml.cs">
+      <DependentUpon>PageStart.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -235,6 +242,9 @@
     <Resource Include="LogicThinkingGames\LogicThinkingGamesImage\balloon3.png" />
     <Resource Include="LogicThinkingGames\LogicThinkingGamesImage\balloon4.png" />
     <Resource Include="LogicThinkingGames\LogicThinkingGamesImage\balloon5.png" />
+    <Content Include="GamesForKids\GamesForKidsSound\Clever.mp3" />
+    <Content Include="GamesForKids\GamesForKidsSound\WhatAlready.mp3" />
+    <Content Include="GamesForKids\GamesForKidsSound\WhatWider.mp3" />
     <Content Include="LogicThinkingGames\LogicThinkingGamesImage\pop_sound.mp3" />
     <Resource Include="LogicThinkingGames\LogicThinkingGamesImage\BalloonPopping.png" />
     <Resource Include="LogicThinkingGames\LogicThinkingGamesImage\Associations.png" />
