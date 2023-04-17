@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using KIDDYKIDS.GamesForKids;
 
 namespace KIDDYKIDS.GamesForKids
 {
@@ -27,8 +28,9 @@ namespace KIDDYKIDS.GamesForKids
 
         private void ImageWiderNarrower_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            WindowGameWiderNarrower taskWindow = new WindowGameWiderNarrower();
-            taskWindow.Show();
+            //WindowGameWiderNarrower taskWindow = new WindowGameWiderNarrower();
+            //taskWindow.Show();
+            this.NavigationService.Navigate(new Uri("/GamesForKids/PageGameWiderNarrower.xaml", UriKind.Relative));
         }
 
         private void ImageCloserFurther_MouseDown(object sender, MouseButtonEventArgs e)

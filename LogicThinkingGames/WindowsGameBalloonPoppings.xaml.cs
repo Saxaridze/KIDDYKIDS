@@ -46,7 +46,7 @@ namespace KIDDYKIDS.LogicThinkingGames
             gameTimer.Tick += GameEngine;
             gameTimer.Interval = TimeSpan.FromMilliseconds(20);
 
-            backgroundImage.ImageSource = new BitmapImage(new Uri("pack://application:,,,/LogicThinkingGames/LogicThinkingGamesImage/background-Image.jpg"));
+            backgroundImage.ImageSource = new BitmapImage(new Uri("pack://application:,,,/LogicThinkingGames/LogicThinkingGamesImage/GameLocationBooble.jpg"));
             MyCanvas.Background = backgroundImage;
 
             RestartGame();
@@ -89,13 +89,13 @@ namespace KIDDYKIDS.LogicThinkingGames
                 Rectangle newBalloon = new Rectangle
                 {
                     Tag = "balloon",
-                    Height = 120,
-                    Width = 100,
+                    Height = 100,
+                    Width = 80,
                     Fill = balloonImage
                 };
 
-                Canvas.SetLeft(newBalloon, rand.Next(100, 1550));
-                Canvas.SetTop(newBalloon, 800);
+                Canvas.SetLeft(newBalloon, rand.Next(100, 900));
+                Canvas.SetTop(newBalloon, 700);
 
                 MyCanvas.Children.Add(newBalloon);
 

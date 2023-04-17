@@ -78,6 +78,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="GamesForKids\PageGameWiderNarrower.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GamesForKids\WindowGameWiderNarrower.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -106,6 +110,9 @@
     </Compile>
     <Compile Include="GamesForKids\PageGamesForKids.xaml.cs">
       <DependentUpon>PageGamesForKids.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GamesForKids\PageGameWiderNarrower.xaml.cs">
+      <DependentUpon>PageGameWiderNarrower.xaml</DependentUpon>
     </Compile>
     <Compile Include="GamesForKids\WindowGameWiderNarrower.xaml.cs">
       <DependentUpon>WindowGameWiderNarrower.xaml</DependentUpon>
@@ -245,6 +252,7 @@
     <Content Include="GamesForKids\GamesForKidsSound\Clever.mp3" />
     <Content Include="GamesForKids\GamesForKidsSound\WhatAlready.mp3" />
     <Content Include="GamesForKids\GamesForKidsSound\WhatWider.mp3" />
+    <Resource Include="LogicThinkingGames\LogicThinkingGamesImage\GameLocationBooble.jpg" />
     <Content Include="LogicThinkingGames\LogicThinkingGamesImage\pop_sound.mp3" />
     <Resource Include="LogicThinkingGames\LogicThinkingGamesImage\BalloonPopping.png" />
     <Resource Include="LogicThinkingGames\LogicThinkingGamesImage\Associations.png" />
