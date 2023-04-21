@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using KIDDYKIDS.GamesForKids;
 
 namespace KIDDYKIDS
 {
@@ -27,23 +28,22 @@ namespace KIDDYKIDS
 
         private void BtnGamesForKids_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri("PageGamesForKids.xaml", UriKind.Relative));
-
+            this.NavigationService.Navigate(new Uri("GamesForKids/PageGamesForKids.xaml", UriKind.Relative));
         }
 
         private void BtnEducationalGames_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Uri("EducationalGames/PageEducationalGames.xaml", UriKind.Relative));
         }
 
         private void BtnGamesForAttention_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Uri("GamesAttentionMemory/PageGamesAttentionMemory.xaml", UriKind.Relative));
         }
 
         private void BtnLogicAndThinkingGames_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Uri("LogicThinkingGames/PageLogicThinkingGames.xaml", UriKind.Relative));
         }
 
         private void BtnColoringPages_Click(object sender, RoutedEventArgs e)

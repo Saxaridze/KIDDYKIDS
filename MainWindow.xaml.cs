@@ -17,6 +17,7 @@ using System.IO;
 using System.ComponentModel;
 using System.Windows.Markup;
 using System.Globalization;
+using KIDDYKIDS.GamesForKids;
 
 namespace KIDDYKIDS
 {
@@ -25,14 +26,15 @@ namespace KIDDYKIDS
     /// </summary>
     public partial class MainWindow : Window
     {
-        private SoundPlayer Player = new SoundPlayer();
+        MediaPlayer player = new MediaPlayer();
 
         public MainWindow()
         {
             InitializeComponent();
 
             Manager.MainFrame = MainFrame;
-            MainFrame.Navigate(new PageMain());
+            MainFrame.Navigate(new PageStart());
+
         }
 
         private void MainFrame_ContentRendered(object sender, EventArgs e)
@@ -49,23 +51,17 @@ namespace KIDDYKIDS
                 MainFrame.GoBack();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void BtnTurnONMusic_Click(object sender, RoutedEventArgs e)
         {
-            this.Player.SoundLocation = "TwirlyTops.wav";
-            this.Player.Load();
-            this.Player.PlayLooping();
+            player.Open(new Uri("../../Sound/TwirlyTops.mp3", UriKind.RelativeOrAbsolute));
+            player.Play();
             BtnTurnONMusic.Visibility = Visibility.Hidden;
             BtnTurnOFFMusic.Visibility = Visibility.Visible;
         }
 
         private void BtnTurnOFFMusic_Click(object sender, RoutedEventArgs e)
         {
-            this.Player.Stop();
+            player.Stop();
             BtnTurnOFFMusic.Visibility = Visibility.Hidden;
             BtnTurnONMusic.Visibility = Visibility.Visible;
         }

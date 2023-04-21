@@ -1,0 +1,13 @@
+﻿<Window x:Class="KIDDYKIDS.LogicThinkingGames.WindowsGameBalloonPoppings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KIDDYKIDS.LogicThinkingGames"
+        mc:Ignorable="d"
+        Title="Воздушные шарики" Height="700" Width="1000" KeyDown="canvasKeyIsDown"  ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen"
+        Closing="Window_Closing">
+    <Canvas Name="MyCanvas" Focusable="True" MouseLeftButtonDown="popBalloons"  Background="White">
+        <Label Name="scoreLabel" FontSize="36" Content="Поймано: 0" Foreground="black" FontWeight="ExtraBold" Canvas.Top="598" Canvas.Left="14" />
+    </Canvas>
+</Window>

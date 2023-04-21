@@ -2,13 +2,14 @@
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:KIDDYKIDS"
       mc:Ignorable="d" 
-      d:DesignHeight="700" d:DesignWidth="1300"
-      Title="PageMain">
-    
-    <Grid Background="#FFCAFFF8">
+      d:DesignHeight="550" d:DesignWidth="1300"
+      Title="Каталог игр">
+
+    <Grid Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition/>
@@ -25,7 +26,7 @@
                     <StackPanel Orientation="Vertical">
                         <Button MinHeight="150" Width="1600" x:Name="BtnGamesForKids" HorizontalAlignment="Center" Margin="0 10 0 0" Click="BtnGamesForKids_Click">
                             <Canvas>
-                                <Image MinHeight="125" MinWidth="154" Canvas.Left="-786" Canvas.Top="-63"></Image>
+                                <Image Stretch="Fill"  Source="/Image/Icone/ImageGame1.png" Canvas.Left="-786" Canvas.Top="-63" Height="128" Width="195"/>
                                 <TextBlock Margin="5" Text="Игры для малышей" FontWeight="Bold" FontSize="36" Canvas.Left="-589" Canvas.Top="-69" Width="700"/>
                                 <TextBlock TextWrapping="Wrap" Margin="5" TextAlignment="Left" FontSize="22" Width="1350" Canvas.Left="-590" Canvas.Top="-7"
                                            Text="Самые простые развивающие игры для детей познакомит малыша с цветами радуги, формами предметов, научит собирать пазлы, разовьёт логическое мышление и творческие способности."/>
@@ -33,7 +34,7 @@
                         </Button>
                         <Button MinHeight="150" Width="1600" x:Name="BtnEducationalGames" HorizontalAlignment="Center" Margin="0 10 0 0" Click="BtnEducationalGames_Click">
                             <Canvas>
-                                <Image MinHeight="125" MinWidth="154" Canvas.Left="-786" Canvas.Top="-63"></Image>
+                                <Image Stretch="Fill"  Source="/Image/Icone/ImageGame2.png" Canvas.Left="-786" Canvas.Top="-63" Height="128" Width="195"/>
                                 <TextBlock  Margin="5" Text="Познавательные игры" FontWeight="Bold" FontSize="36" Canvas.Left="-589" Canvas.Top="-69" Width="700"/>
                                 <TextBlock TextWrapping="Wrap" Margin="5" TextAlignment="Left" FontSize="22" Width="1350" Canvas.Left="-590" Canvas.Top="-7"
                                            Text="Вместе с нашими развивающими играми для детей ваш малыш познакомится с многообразием окружающего мира, получит знания о различных предметах и явлениях."/>
@@ -41,7 +42,7 @@
                         </Button>
                         <Button MinHeight="150" Width="1600" x:Name="BtnGamesForAttention" HorizontalAlignment="Center" Margin="0 10 0 0" Click="BtnGamesForAttention_Click">
                             <Canvas>
-                                <Image MinHeight="125" MinWidth="154" Canvas.Left="-786" Canvas.Top="-63"/>
+                                <Image Stretch="Fill"  Source="/Image/Icone/ImageGame3.png" Canvas.Left="-786" Canvas.Top="-63" Height="128" Width="195"/>
                                 <TextBlock Text="Игры на внимание и память" FontWeight="Bold" FontSize="36" Canvas.Left="-589" Canvas.Top="-69" Width="700"/>
                                 <TextBlock TextWrapping="Wrap" Margin="5" TextAlignment="Left" FontSize="22" Width="1350" Canvas.Left="-590" Canvas.Top="-7"
                                            Text="Найди пару, найди отличия, найди предмет, что изменилось, игра лабиринт. Играйте бесплатно в эти и многие другие игры на развитие внимания и памяти для детей."/>
@@ -49,7 +50,7 @@
                         </Button>
                         <Button MinHeight="150" Width="1600" x:Name="BtnLogicAndThinkingGames" HorizontalAlignment="Center" Margin="0 10 0 0" Click="BtnLogicAndThinkingGames_Click">
                             <Canvas>
-                                <Image DockPanel.Dock="Left" MinHeight="125" MinWidth="154" Canvas.Left="-786" Canvas.Top="-63"/>
+                                <Image Stretch="Fill"  Source="/Image/Icone/ImageGame4.png" Canvas.Left="-786" Canvas.Top="-63" Height="128" Width="195"/>
                                 <TextBlock Text="Игры на логику и мышление" FontWeight="Bold" FontSize="36" Canvas.Left="-589" Canvas.Top="-69" Width="700"/>
                                 <TextBlock TextWrapping="Wrap" TextAlignment="Left" FontSize="22" Width="1350" Canvas.Left="-590" Canvas.Top="-7"
                                            Text="Интересные, весёлые, логические игры-задания для ребёнка. Так занимательно и увлекательно, что просто невозможно оторваться!"/>
@@ -57,7 +58,7 @@
                         </Button>
                         <Button MinHeight="150" Width="1600" x:Name="BtnColoringPages" HorizontalAlignment="Center" Margin="0 10 0 0" Click="BtnColoringPages_Click">
                             <Canvas>
-                                <Image DockPanel.Dock="Left" MinHeight="125" MinWidth="154" Canvas.Left="-786" Canvas.Top="-63"/>
+                                <Image Stretch="Fill"  Source="/Image/Icone/ImageGame5.png" Canvas.Left="-786" Canvas.Top="-63" Height="128" Width="195"/>
                                 <TextBlock Text="Раскраски" FontWeight="Bold" FontSize="36" Canvas.Left="-589" Canvas.Top="-69" Width="700"/>
                                 <TextBlock TextWrapping="Wrap" TextAlignment="Left" FontSize="22" Width="1350" Canvas.Left="-590" Canvas.Top="-7"
                                            Text="Игры для детей онлайн, позволяющие развивать творческие способности ребёнка. Здесь можно рисовать и раскрашивать, делать наш мир красивее и ярче!"/>
@@ -65,7 +66,7 @@
                         </Button>
                         <Button MinHeight="150" Width="1600" x:Name="BtnPuzzles" HorizontalAlignment="Center" Margin="0 10 0 0" Click="BtnPuzzles_Click">
                             <Canvas>
-                                <Image DockPanel.Dock="Left" MinHeight="125" MinWidth="154" Canvas.Left="-786" Canvas.Top="-63"/>
+                                <Image Stretch="Fill"  Source="/Image/Icone/ImageGame6.png" Canvas.Left="-786" Canvas.Top="-63" Height="128" Width="195"/>
                                 <TextBlock Text="Пазлы" FontWeight="Bold" FontSize="36" Canvas.Left="-589" Canvas.Top="-69" Width="700"/>
                                 <TextBlock TextWrapping="Wrap" TextAlignment="Left" FontSize="22" Width="1350" Canvas.Left="-590" Canvas.Top="-7"
                                            Text="Развивающие игры для детей, в которых необходимо собрать целую картинку из множества кусочков. Пазлы - это невероятно увлекательно, необычайно интересно и весьма полезно!"/>
@@ -73,7 +74,7 @@
                         </Button>
                         <Button MinHeight="150" Width="1600" x:Name="BtnRiddles" HorizontalAlignment="Center" Margin="0 10 0 0" Click="BtnRiddles_Click">
                             <Canvas>
-                                <Image DockPanel.Dock="Left" MinHeight="125" MinWidth="154" Canvas.Left="-786" Canvas.Top="-63"/>
+                                <Image Stretch="Fill"  Source="/Image/Icone/ImageGame7.png" Canvas.Left="-786" Canvas.Top="-63" Height="128" Width="195"/>
                                 <TextBlock Text="Загадки" FontWeight="Bold" FontSize="36" Canvas.Left="-589" Canvas.Top="-69" Width="700"/>
                                 <TextBlock TextWrapping="Wrap" TextAlignment="Left" FontSize="22" Width="1350" Canvas.Left="-590" Canvas.Top="-7"
                                            Text="Ваш ребёнок любит отгадывать весёлые загадки, решать хитроумные головоломки и увлекательные шарады? Тогда вам обязательно понравится этот раздел нашего сайтика!"/>

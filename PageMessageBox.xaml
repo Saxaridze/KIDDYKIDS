@@ -1,0 +1,45 @@
+﻿<Window x:Class="KIDDYKIDS.PageMessageBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KIDDYKIDS"
+        mc:Ignorable="d"
+        Title="Сообщение" Height="150" Width="250" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        WindowStyle="None" AllowsTransparency="True" Loaded="Window_Loaded" Background="{x:Null}">
+
+    <Grid>
+        <materialDesign:Card Margin="10" UniformCornerRadius="15">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="15*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="00 10 0 0">
+                    <TextBlock TextWrapping="Wrap" Margin="5" TextAlignment="Center" 
+                               Text="Идет производсто*" FontSize="18">
+                        <TextBlock.ToolTip>
+                            <ToolTip Background="AliceBlue" Foreground="Black" HasDropShadow="False"
+                                     Placement="Relative" HorizontalOffset="15" VerticalOffset="10">
+                                <StackPanel>
+                                    <TextBlock FontSize="14" TextAlignment="Center">Определение уровня сложности</TextBlock>
+                                    <TextBlock FontSize="14" TextAlignment="Center">Строительная среда, выступы, препятствия и объекты</TextBlock>
+                                    <TextBlock FontSize="14" TextAlignment="Center">Программирование / сценарии</TextBlock>
+                                    <TextBlock FontSize="14" TextAlignment="Center">Цифровое редактирование</TextBlock>
+                                </StackPanel>
+                            </ToolTip>
+                        </TextBlock.ToolTip>
+                    </TextBlock>
+                    <Button x:Name="BtnExet" Click="BtnExet_Click" Margin="10">ОК</Button>
+                </StackPanel>
+            </Grid>
+        </materialDesign:Card>
+    </Grid>
+</Window>
